@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/iv_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/placeholder" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tv_product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Essence Mascara Lash Princess"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Category -->
+        <TextView
+            android:id="@+id/tv_product_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Category: Beauty"
+            android:textSize="14sp" />
+
+        <!-- Price and Discount -->
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Price: $9.99 (7.17% off)"
+            android:textSize="14sp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tv_product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula."
+            android:textSize="14sp" />
+
+        <!-- Rating -->
+        <TextView
+            android:id="@+id/tv_product_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Rating: 4.94"
+            android:textSize="14sp" />
+
+        <!-- Stock -->
+        <TextView
+            android:id="@+id/tv_product_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Availability: Low Stock"
+            android:textSize="14sp" />
+
+        <!-- Brand -->
+        <TextView
+            android:id="@+id/tv_product_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Brand: Essence"
+            android:textSize="14sp" />
+
+        <!-- SKU -->
+        <TextView
+            android:id="@+id/tv_product_sku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SKU: RCH45Q1A"
+            android:textSize="14sp" />
+
+        <!-- Weight -->
+        <TextView
+            android:id="@+id/tv_product_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Weight: 2g"
+            android:textSize="14sp" />
+
+        <!-- Dimensions -->
+        <TextView
+            android:id="@+id/tv_product_dimensions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Dimensions: 23.17 x 14.43 x 28.01"
+            android:textSize="14sp" />
+
+        <!-- Warranty Information -->
+        <TextView
+            android:id="@+id/tv_product_warranty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Warranty: 1 month warranty"
+            android:textSize="14sp" />
+
+        <!-- Shipping Information -->
+        <TextView
+            android:id="@+id/tv_product_shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Shipping: Ships in 1 month"
+            android:textSize="14sp" />
+
+        <!-- Return Policy -->
+        <TextView
+            android:id="@+id/tv_product_return_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Return Policy: 30 days return policy"
+            android:textSize="14sp" />
+
+        <!-- Reviews Header -->
+        <TextView
+            android:id="@+id/tv_reviews_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Reviews"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Reviews -->
+        <LinearLayout
+            android:id="@+id/ll_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <!-- Review 1 -->
+            <TextView
+                android:id="@+id/tv_review_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe (john.doe@x.dummyjson.com)\nRating: 2\nVery unhappy with my purchase!"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Review 2 -->
+            <TextView
+                android:id="@+id/tv_review_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nolan Gonzalez (nolan.gonzalez@x.dummyjson.com)\nRating: 2\nNot as described!"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Review 3 -->
+            <TextView
+                android:id="@+id/tv_review_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scarlett Wright (scarlett.wright@x.dummyjson.com)\nRating: 5\nVery satisfied!"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
