@@ -4,28 +4,28 @@ import android.os.Parcel
 import android.os.Parcelable
 
 data class Product(
-    val availabilityStatus: String="",
-    val brand: String="",
-    val category: String="",
-    val description: String="",
+    val availabilityStatus: String = "",
+    val brand: String = "",
+    val category: String = "",
+    val description: String = "",
     val dimensions: Dimensions,
-    val discountPercentage: Double=0.0,
-    val id: Int=1,
+    val discountPercentage: Double = 0.0,
+    val id: Int = 1,
     val images: List<String> = ArrayList(),
     val meta: Meta,
-    val minimumOrderQuantity: Int=1,
-    val price: Double=0.0,
-    val rating: Double=0.0,
-    val returnPolicy: String="",
-    val reviews: List<Review> =ArrayList(),
-    val shippingInformation: String="",
-    val sku: String="",
-    val stock: Int=1,
-    val tags: List<String> =ArrayList(),
-    val thumbnail: String="",
-    val title: String="",
-    val warrantyInformation: String="",
-    val weight: Int=1
+    val minimumOrderQuantity: Int = 1,
+    val price: Double = 0.0,
+    val rating: Double = 0.0,
+    val returnPolicy: String = "",
+    val reviews: List<Review> = ArrayList(),
+    val shippingInformation: String = "",
+    val sku: String = "",
+    val stock: Int = 1,
+    val tags: List<String> = ArrayList(),
+    val thumbnail: String = "",
+    val title: String = "",
+    val warrantyInformation: String = "",
+    val weight: Int = 1
 ) : Parcelable {
 
     constructor(parcel: Parcel) : this(
@@ -67,9 +67,9 @@ data class Product(
         parcel.writeDouble(price)
         parcel.writeDouble(rating)
         parcel.writeString(returnPolicy)
+        parcel.writeTypedList(reviews) // Ensure the correct method for writing a list of Parcelable
         parcel.writeString(shippingInformation)
         parcel.writeString(sku)
-        parcel.writeTypedList(reviews)
         parcel.writeInt(stock)
         parcel.writeStringList(tags)
         parcel.writeString(thumbnail)
